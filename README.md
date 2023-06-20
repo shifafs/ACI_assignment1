@@ -60,8 +60,7 @@ total amount, total tax, final amount including tax.**
       //Includes all getters and setters
     }
 
-**4.Create a JAVA program makes use of Map (Collection) concept with Key as Consumer 
-Info and value as List of Invoice.**
+**4.Create a JAVA program makes use of Map (Collection) concept with Key as Consumer Info and value as List of Invoice.**
 class ConsumerMap {
     private Map<Consumer, List<Invoice>> consumerMap;
 
