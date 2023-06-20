@@ -118,8 +118,8 @@ The above function prepapres the pdf of all consumers in separate PDFs. It creat
 
 **7. Keep track of your visitor/ consumers and remind them for the next haircut. You should have the capability to notify 
 the consumer regarding next haircut event. The remainder should be 25 days from last hair cut. Here notify can be simple print statement.**
-try {
-
+            
+              try {
                 Consumer foundConsumer = salonApp.findConsumer(searchKey);
                   System.out.println("Consumer found: " + foundConsumer.getName());
                   LocalDate nextHaircutDate = consumer1.getLastHaircutDate().plusDays(25);
