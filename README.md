@@ -1,6 +1,6 @@
 # ACI_assignment1
-**1. Create a POJO for having consumer info- phone no, name and email**
-    public class Consumer {
+**1. Create a POJO for having consumer info- phone no, name and email**.
+public class Consumer {
         private String phoneNumber;
         private String name;
         private String email;
