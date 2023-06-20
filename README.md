@@ -42,6 +42,7 @@ public class Consumer {
         this.priceCharged = priceCharged;
     }
   //And all the getters and setters
+    }
 **  3. Create a POJO for Invoices having information of billid, billdesc, list of line items, date, 
 total amount, total tax, final amount including tax.**
   public class Invoice {
@@ -64,6 +65,7 @@ total amount, total tax, final amount including tax.**
         this.finalAmountIncludingTax = finalAmountIncludingTax;
     }
   //Includes all getters and setters
+    }
 **  4.Create a JAVA program makes use of Map (Collection) concept with Key as Consumer 
 Info and value as List of Invoice.**
   class ConsumerMap {
@@ -108,7 +110,7 @@ consumer is not found create a custom exception like consumernotfoundexception.*
 
         Collections.sort(invoices, invoiceComparator);
     }
-  This function compares the dates of the invoices of the consumer and sorts it in ascending order. If key found, prints the invoice details in order.
+  The above  function compares the dates of the invoices of the consumer and sorts it in ascending order. If key found, prints the invoice details in order.
 **  6.Create a JAVA program which can generate PDF containing invoices. The rules for this 
 task are as follows.**
   
@@ -139,7 +141,7 @@ task are as follows.**
                 document.close();
 
                 System.out.println("PDF generated successfully for consumer: " + consumer.getName());
-        } 
+        } }
   The above function prepapres the pdf of all consumers in separate PDFs. It creates a table and the invoices of each consumer in it.
 **7. keep track of your visitor/ consumers and remind them for the next haircut. You should have the capability to notify 
 the consumer regarding next haircut event. The remainder should be 25 days from last hair 
@@ -157,7 +159,7 @@ cut. Here notify can be simple print statement.**
                 } else if(invoice.getBillDesc().equals("Haircut and Styling")) {
                     System.out.println("Next haircut in " + daysRemaining + " days.");
                 }
-            }
+            }}
   The above try block first computes the next haircut date. It then finds the days between the present and next date. If the reamaing days are less
   than or equal to zero and the invoice description is "haircut" it prints the neccessary print statement that its time for next haircut.
 
