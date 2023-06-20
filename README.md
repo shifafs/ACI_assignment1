@@ -46,14 +46,7 @@ public class Consumer {
     
 **3. Create a POJO for Invoices having information of billid, billdesc, list of line items, date, 
 total amount, total tax, final amount including tax.**
-  public class Invoice {
-    private String billId;
-    private String billDesc;
-    private List<LineItem> lineItems;
-    private Date date;
-    private double totalAmount;
-    private double totalTax;
-    private double finalAmountIncludingTax;
+ 
 
     public Invoice(String billId, String billDesc, List<LineItem> lineItems, Date date,
                    double totalAmount, double totalTax, double finalAmountIncludingTax) {
