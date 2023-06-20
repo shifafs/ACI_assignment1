@@ -41,7 +41,7 @@ public class Consumer {
         this.itemType = itemType;
         this.priceCharged = priceCharged;
     //And all the getters and setters
-    }
+    }}
   
     
 **3. Create a POJO for Invoices having information of billid, billdesc, list of line items, date, 
