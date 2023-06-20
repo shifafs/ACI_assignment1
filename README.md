@@ -57,9 +57,9 @@ total amount, total tax, final amount including tax.**
         this.totalAmount = totalAmount;
         this.totalTax = totalTax;
         this.finalAmountIncludingTax = finalAmountIncludingTax;
+      //Includes all getters and setters
     }
-  //Includes all getters and setters
-    }
+
 **4.Create a JAVA program makes use of Map (Collection) concept with Key as Consumer 
 Info and value as List of Invoice.**
   class ConsumerMap {
