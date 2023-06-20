@@ -30,7 +30,7 @@ public class Consumer {
         this.lastHaircutDate = lastHaircutDate;
     }
 
-**  2.Create a POJO for Line Item like – item no, item type – hair cut, facial etc , price charged**
+**2.Create a POJO for Line Item like – item no, item type – hair cut, facial etc , price charged**
   public class LineItem{
     private int itemNo;
     private String itemType;
@@ -40,10 +40,11 @@ public class Consumer {
         this.itemNo = itemNo;
         this.itemType = itemType;
         this.priceCharged = priceCharged;
+    //And all the getters and setters
     }
-  //And all the getters and setters
-    }
-**  3. Create a POJO for Invoices having information of billid, billdesc, list of line items, date, 
+  
+    
+**3. Create a POJO for Invoices having information of billid, billdesc, list of line items, date, 
 total amount, total tax, final amount including tax.**
   public class Invoice {
     private String billId;
@@ -66,7 +67,7 @@ total amount, total tax, final amount including tax.**
     }
   //Includes all getters and setters
     }
-**  4.Create a JAVA program makes use of Map (Collection) concept with Key as Consumer 
+**4.Create a JAVA program makes use of Map (Collection) concept with Key as Consumer 
 Info and value as List of Invoice.**
   class ConsumerMap {
     private Map<Consumer, List<Invoice>> consumerMap;
@@ -83,7 +84,7 @@ Info and value as List of Invoice.**
         return consumerMap.get(consumer);
     }
 }
-**  5. Create a JAVA program to sort the invoices for each customer by Date in ascending or 
+**5. Create a JAVA program to sort the invoices for each customer by Date in ascending or 
 descending order based on input which can be customer phone no or email. If the 
 consumer is not found create a custom exception like consumernotfoundexception.**
   private Consumer findConsumer(String phoneOrEmail) {
@@ -111,7 +112,7 @@ consumer is not found create a custom exception like consumernotfoundexception.*
         Collections.sort(invoices, invoiceComparator);
     }
   The above  function compares the dates of the invoices of the consumer and sorts it in ascending order. If key found, prints the invoice details in order.
-**  6.Create a JAVA program which can generate PDF containing invoices. The rules for this 
+**6.Create a JAVA program which can generate PDF containing invoices. The rules for this 
 task are as follows.**
   
   public void generatepdf(){
