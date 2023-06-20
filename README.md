@@ -32,7 +32,7 @@ public class Consumer {
 
 **2.Create a POJO for Line Item like – item no, item type – hair cut, facial etc , price charged**
   public class LineItem{
-    private int itemNo;
+     private int itemNo;
     private String itemType;
     private double priceCharged;
 
