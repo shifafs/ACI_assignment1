@@ -29,7 +29,7 @@ public class Consumer {
     public void setLastHaircutDate(LocalDate lastHaircutDate) {
         this.lastHaircutDate = lastHaircutDate;
     }
-}
+
 **  2.Create a POJO for Line Item like – item no, item type – hair cut, facial etc , price charged**
   public class LineItem{
     private int itemNo;
