@@ -1,11 +1,11 @@
 # ACI_assignment1
 **1. Create a POJO for having consumer info- phone no, name and email**
-public class Consumer {
-    private String phoneNumber;
-    private String name;
-    private String email;
-    private List<Invoice> invoices;
-    private LocalDate lastHaircutDate;
+    public class Consumer {
+        private String phoneNumber;
+        private String name;
+        private String email;
+        private List<Invoice> invoices;
+        private LocalDate lastHaircutDate;
 
     public Consumer(String phoneNumber, String name, String email) {
         this.phoneNumber = phoneNumber;
