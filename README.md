@@ -62,7 +62,7 @@ total amount, total tax, final amount including tax.**
 
 **4.Create a JAVA program makes use of Map (Collection) concept with Key as Consumer 
 Info and value as List of Invoice.**
-  class ConsumerMap {
+class ConsumerMap {
     private Map<Consumer, List<Invoice>> consumerMap;
 
     public ConsumerMap() {
@@ -80,29 +80,29 @@ Info and value as List of Invoice.**
 **5. Create a JAVA program to sort the invoices for each customer by Date in ascending or 
 descending order based on input which can be customer phone no or email. If the 
 consumer is not found create a custom exception like consumernotfoundexception.**
-  private Consumer findConsumer(String phoneOrEmail) {
-        for (Consumer consumer : consumers) {
-            if (consumer.getPhoneNumber().equals(phoneOrEmail) || consumer.getEmail().equals(phoneOrEmail)) {
-                return consumer;
+private Consumer findConsumer(String phoneOrEmail) {
+      for (Consumer consumer : consumers) {
+          if (consumer.getPhoneNumber().equals(phoneOrEmail) || consumer.getEmail().equals(phoneOrEmail)) {
+              return consumer;
             }
         }
-        return null;
+      return null;
     }
   This function takes the key(phone or email) as parameter and returns the customer details in case of successful search.
-   public void sortInvoicesForConsumer(String phoneOrEmail, boolean ascending) throws ConsumerNotFoundException {
-        Consumer consumer = findConsumer(phoneOrEmail);
-        if (consumer == null) {
-            throw new ConsumerNotFoundException("Consumer not found: " + phoneOrEmail);
+public void sortInvoicesForConsumer(String phoneOrEmail, boolean ascending) throws ConsumerNotFoundException {
+     Consumer consumer = findConsumer(phoneOrEmail);
+     if (consumer == null) {
+         throw new ConsumerNotFoundException("Consumer not found: " + phoneOrEmail);
         }
 
-        List<Invoice> invoices = consumer.getInvoices();
+     List<Invoice> invoices = consumer.getInvoices();
 
-        Comparator<Invoice> invoiceComparator = Comparator.comparing(Invoice::getDate);
-        if (!ascending) {
-            invoiceComparator = invoiceComparator.reversed();
+     Comparator<Invoice> invoiceComparator = Comparator.comparing(Invoice::getDate);
+     if (!ascending) {
+         invoiceComparator = invoiceComparator.reversed();
         }
 
-        Collections.sort(invoices, invoiceComparator);
+     Collections.sort(invoices, invoiceComparator);
     }
   The above  function compares the dates of the invoices of the consumer and sorts it in ascending order. If key found, prints the invoice details in order.
 **6.Create a JAVA program which can generate PDF containing invoices. The rules for this 
