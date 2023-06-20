@@ -65,7 +65,7 @@ total amount, total tax, final amount including tax.**
         return consumerMap.get(consumer);
     }
 
-**5. Create a JAVA program to sort the invoices for each customer by Date in ascending or \descending order based on input which can be customer phone no or email. If the consumer is not found create a custom exception like consumernotfoundexception.**
+**5. Create a JAVA program to sort the invoices for each customer by Date in ascending or descending order based on input which can be customer phone no or email. If the consumer is not found create a custom exception like consumernotfoundexception.**
 
     private Consumer findConsumer(String phoneOrEmail) {
        for (Consumer consumer : consumers) {
@@ -74,9 +74,8 @@ total amount, total tax, final amount including tax.**
             }
         
 The above function takes the key(phone or email) as parameter and returns the customer details in case of successful search.
-public void sortInvoicesForConsumer(String phoneOrEmail, boolean ascending) throws ConsumerNotFoundException {
     
-
+    public void sortInvoicesForConsumer(String phoneOrEmail, boolean ascending) throws ConsumerNotFoundException {
      List<Invoice> invoices = consumer.getInvoices();
 
      Comparator<Invoice> invoiceComparator = Comparator.comparing(Invoice::getDate);
@@ -115,6 +114,8 @@ The above  function compares the dates of the invoices of the consumer and sorts
                 System.out.println("PDF generated successfully for consumer: " + consumer.getName());
         } }
 The above function prepapres the pdf of all consumers in separate PDFs. It creates a table and the invoices of each consumer in it.
+
+
 **7. Keep track of your visitor/ consumers and remind them for the next haircut. You should have the capability to notify 
 the consumer regarding next haircut event. The remainder should be 25 days from last hair cut. Here notify can be simple print statement.**
 try {
