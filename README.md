@@ -24,7 +24,7 @@
         this.lastHaircutDate = lastHaircutDate;
     }
 
-**2.Create a POJO for Line Item like – item no, item type – hair cut, facial etc , price charged**
+**2. Create a POJO for Line Item like – item no, item type – hair cut, facial etc , price charged**
   
 
     public LineItem(int itemNo, String itemType, double priceCharged) {
@@ -51,7 +51,7 @@ total amount, total tax, final amount including tax.**
       //Includes all getters and setters
     }
 
-**4.Create a JAVA program makes use of Map (Collection) concept with Key as Consumer Info and value as List of Invoice.**
+**4. Create a JAVA program makes use of Map (Collection) concept with Key as Consumer Info and value as List of Invoice.**
         
     public ConsumerMap() {
         consumerMap = new HashMap<>();
@@ -65,7 +65,7 @@ total amount, total tax, final amount including tax.**
         return consumerMap.get(consumer);
     }
 
-**5.Create a JAVA program to sort the invoices for each customer by Date in ascending or \descending order based on input which can be customer phone no or email. If the consumer is not found create a custom exception like consumernotfoundexception.**
+**5. Create a JAVA program to sort the invoices for each customer by Date in ascending or \descending order based on input which can be customer phone no or email. If the consumer is not found create a custom exception like consumernotfoundexception.**
 
     private Consumer findConsumer(String phoneOrEmail) {
        for (Consumer consumer : consumers) {
@@ -73,7 +73,7 @@ total amount, total tax, final amount including tax.**
                return consumer;
             }
         
-This function takes the key(phone or email) as parameter and returns the customer details in case of successful search.
+The above function takes the key(phone or email) as parameter and returns the customer details in case of successful search.
 public void sortInvoicesForConsumer(String phoneOrEmail, boolean ascending) throws ConsumerNotFoundException {
     
 
@@ -88,8 +88,8 @@ public void sortInvoicesForConsumer(String phoneOrEmail, boolean ascending) thro
     }
 
 The above  function compares the dates of the invoices of the consumer and sorts it in ascending order. If key found, prints the invoice details in order.
-**6.Create a JAVA program which can generate PDF containing invoices. The rules for this 
-task are as follows.**
+
+**6. Create a JAVA program which can generate PDF containing invoices. The rules for this task are as follows.**
   
             try {
 
@@ -115,7 +115,7 @@ task are as follows.**
                 System.out.println("PDF generated successfully for consumer: " + consumer.getName());
         } }
 The above function prepapres the pdf of all consumers in separate PDFs. It creates a table and the invoices of each consumer in it.
-**7. keep track of your visitor/ consumers and remind them for the next haircut. You should have the capability to notify 
+**7. Keep track of your visitor/ consumers and remind them for the next haircut. You should have the capability to notify 
 the consumer regarding next haircut event. The remainder should be 25 days from last hair cut. Here notify can be simple print statement.**
 try {
 
