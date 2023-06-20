@@ -63,7 +63,7 @@ total amount, total tax, final amount including tax.**
 **4.Create a JAVA program makes use of Map (Collection) concept with Key as Consumer Info and value as List of Invoice.**
     
 public class ConsumerMap {
-    private Map<Consumer, List<Invoice>> consumerMap;
+    private Map<Consumer, List<Invoice>> consumerMap;}
 
     public ConsumerMap() {
         consumerMap = new HashMap<>();
@@ -76,7 +76,7 @@ public class ConsumerMap {
     public List<Invoice> getInvoicesForConsumer(Consumer consumer) {
         return consumerMap.get(consumer);
     }
-}
+
 **5. Create a JAVA program to sort the invoices for each customer by Date in ascending or 
 descending order based on input which can be customer phone no or email. If the 
 consumer is not found create a custom exception like consumernotfoundexception.**
